@@ -13,14 +13,20 @@ Install all tools that is needed
 sudo apt install
 micro
 cargo
-zoxide
 fzf
 bat
 fd-find
 ripgrep
 fonts-powerline
 fish
-fisher
+``
+
+``
+curl -sL https://raw.githubusercontent.com/jorgebucaran/fisher/main/functions/fisher.fish | source && fisher install jorgebucaran/fisher
+``
+
+``
+curl -sS https://raw.githubusercontent.com/ajeetdsouza/zoxide/main/install.sh | bash
 ``
 
 ``
@@ -39,6 +45,9 @@ fisher install eth-p/fish-plugin-sudo
 fisher install veirt/web-search.fish
 fisher install e-beach/fish-logic
 fisher install "mong8se/actually.fish"
+fisher install nickeb96/puffer-fish
+fisher install franciscolourenco/don
+fisher install markcial/upto
 ```
 
 ## Micro plugins
