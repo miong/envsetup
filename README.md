@@ -7,8 +7,8 @@ Personnal working environement settup
 Tabby terminal emulator 
 Install from https://tabby.sh/
 
-## Tools
-Install all tools that is needed
+## Command line tools
+### apt based install
 ``
 sudo apt install
 micro
@@ -20,34 +20,52 @@ ripgrep
 fonts-powerline
 fish
 ``
-
-``
-curl -sL https://raw.githubusercontent.com/jorgebucaran/fisher/main/functions/fisher.fish | source && fisher install jorgebucaran/fisher
-``
-
-``
+### curl based install
+#### Bash side
+```
 curl -sS https://raw.githubusercontent.com/ajeetdsouza/zoxide/main/install.sh | bash
-``
+```
+#### Fish side
+```
+curl -sL https://raw.githubusercontent.com/jorgebucaran/fisher/main/functions/fisher.fish | source && fisher install jorgebucaran/fisher
+```
 
+
+### cargo based install
 ``
+cargo install atuin
+cargo install bottom
+cargo install cargo-update
+cargo install delta
+cargo install exa
+cargo install git-delta
+cargo install gitui
+cargo install hexyl
 cargo install lsd
+cargo install minus
+cargo install procs
+cargo install rm-improved
+cargo install tealdeer
+cargo install topgrade
+cargo install xcp
 ``
 
 ## Fish plugins
 ```
-fisher install matchai/spacefish
-fisher install PatrickF1/fzf.fish
+fisher install e-beach/fish-logic
+fisher install eth-p/fish-plugin-sudo
+fisher install franciscolourenco/done
+fisher install gazorby/fish-abbreviation-tips
 fisher install jethrokuan/z
+fisher install jorgebucaran/fisher
 fisher install jorgebucaran/replay.fish
 fisher install lilyball/nix-env.fish
-fisher install gazorby/fish-abbreviation-tips
-fisher install eth-p/fish-plugin-sudo
-fisher install veirt/web-search.fish
-fisher install e-beach/fish-logic
-fisher install "mong8se/actually.fish"
-fisher install nickeb96/puffer-fish
-fisher install franciscolourenco/don
 fisher install markcial/upto
+fisher install matchai/spacefish
+fisher install mong8se/actually.fish
+fisher install nickeb96/puffer-fish
+fisher install patrickf1/fzf.fish
+fisher install veirt/web-search.fish
 ```
 
 ## Micro plugins
