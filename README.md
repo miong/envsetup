@@ -79,3 +79,6 @@ micro -plugin install fish
 micro -plugin install jump
 micro -plugin install filemanager
 ```
+
+## Manual installs
+NNN - https://github.com/jarun/nnn
