@@ -32,7 +32,7 @@ curl -sL https://raw.githubusercontent.com/jorgebucaran/fisher/main/functions/fi
 
 
 ### cargo based install
-``
+```
 cargo install atuin
 cargo install bottom
 cargo install cargo-update
@@ -48,7 +48,7 @@ cargo install rm-improved
 cargo install tealdeer
 cargo install topgrade
 cargo install xcp
-``
+```
 
 ## Fish plugins
 ```
