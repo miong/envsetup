@@ -9,7 +9,9 @@ Install from https://tabby.sh/
 
 ## Neovim
 Install from https://github.com/neovim/neovim/releases
+
 Then make it great using https://github.com/NvChad/NvChad
+
 And customize it with cp -r config/nvim/lua/custom ~/.config/nvim/lua/custom 
 
 ## Command line tools
