@@ -2,7 +2,7 @@ local M = {}
 
 M.global = {
   n = {
-    ["<leader>aq"] = {"<cmd> bufdo q <CR>", "quit all buffers"},
+    ["<leader>aq"] = {"<cmd> qa <CR>", "quit all buffers"},
   },
 }
 

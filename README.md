@@ -14,6 +14,21 @@ Then make it great using https://github.com/NvChad/NvChad
 
 And customize it with cp -r config/nvim/lua/custom ~/.config/nvim/lua/custom 
 
+Install those LSP server using Mason:
+```
+  Installed
+    󰄳  bash-language-server 
+    󰄳  clangd 
+    󰄳  cmake-language-server 
+    󰄳  groovy-language-server 
+    󰄳  kotlin-language-server 
+    󰄳  lua-language-server 
+    󰄳  pylyzer 
+    󰄳  python-lsp-server 
+    󰄳  vim-language-server 
+    󰄳  yaml-language-server 
+```
+
 ## Command line tools
 ### apt based install
 ``
