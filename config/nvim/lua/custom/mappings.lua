@@ -1,5 +1,17 @@
 local M = {}
 
+M.global = {
+  n = {
+    ["<leader>aq"] = {"<cmd> qa <CR>", "quit all buffers"},
+  },
+}
+
+M.todo = {
+  n = {
+    ["<leader>td"] = { "<cmd> TodoTelescope <CR>", "list TODO tags"},
+  }
+}
+
 M.searchreplace = {
   plugin = true,
   n = {
@@ -24,6 +36,44 @@ M.searchreplace = {
   },
 }
 
+M.litee = {
+  plugin = true,
+  n = {
+    ["<leader>lt"] = {
+      "<cmd> LTPanel <CR>",
+      "Toggle Litee view"
+    },
+    ["<leader>cho"] = {
+      function ()
+        vim.lsp.buf.outgoing_calls()
+      end,
+      "show outgoing calls"
+    },
+    ["<leader>chi"] = {
+      function ()
+        vim.lsp.buf.incoming_calls()
+      end,
+      "show incoming calls"
+    },
+    ["<leader>chc"] = {
+      "<cmd> LTCloseCalltree <CR>",
+      "hide call hierarchie"
+    },
+    ["<leader>sto"] = {
+      function ()
+        vim.lsp.buf.document_symbol()
+      end,
+      "show symbols"
+    },
+    ["<leader>stc"] = {
+      "<cmd> LTCloseSymboltree <CR>",
+      "hide symbols"
+    },
+
+  },
+}
+
 require("core.utils").load_mappings("searchreplace")
+require("core.utils").load_mappings("litee")
 
 return M
