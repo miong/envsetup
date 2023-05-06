@@ -6,6 +6,12 @@ M.global = {
   },
 }
 
+M.todo = {
+  n = {
+    ["<leader>td"] = { "<cmd> TodoTelescope <CR>", "list TODO tags"},
+  }
+}
+
 M.searchreplace = {
   plugin = true,
   n = {

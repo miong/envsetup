@@ -91,7 +91,76 @@ local plugins = {
     init = function ()
       require("litee.symboltree").setup({})
     end
-  }
+  },
+  -- todo-commments
+  {
+    "folke/todo-comments.nvim",
+    lazy = false,
+    config = function ()
+      require("todo-comments").setup({
+        search = {
+          pattern = [[(#|\\) *\b(KEYWORDS) *:?]],
+        },
+      })
+    end
+  },
+  -- noice
+  {
+    "folke/noice.nvim",
+    lazy = false,
+    dependencies = {
+      {
+        "MunifTanjim/nui.nvim"
+      },
+      {
+        "rcarriga/nvim-notify"
+      },
+    },
+    config = function ()
+      require("noice").setup({
+        presets = {
+          bottom_search = true,
+          command_palette = false,
+          long_message_to_split = true,
+          inc_rename = false,
+          lsp_doc_border = true,
+        },
+        cmdline = {
+          view = "cmdline"
+        },
+        lsp = {
+          hover = { enabled = false },
+          signature = { enabled = false },
+        },
+      })
+    end
+  },
+  -- wilder
+  {
+    "gelguy/wilder.nvim",
+    lazy = false,
+    dependencies = {
+      {
+        "roxma/nvim-yarp"
+      },
+      {
+        "roxma/vim-hug-neovim-rpc"
+      }
+    },
+    config = function ()
+      local wilder = require('wilder')
+      wilder.setup({
+        modes = {':', '/', '?'},
+      })
+      wilder.set_option('renderer', wilder.popupmenu_renderer(
+        wilder.popupmenu_palette_theme({
+          border = 'rounded',
+          highlighter = wilder.basic_highlighter(),
+          highlights = { accent = wilder.make_hl("WilderAccent", "Pmenu", {{a=1}, {a=1}, {foreground = "#a80775"}})}
+        })
+      ))
+    end
+  },
 
 }
 
