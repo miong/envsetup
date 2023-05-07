@@ -26,4 +26,5 @@ if status is-interactive
     abbr -a -- ps procs
     abbr -a -- history _atuin_search
     abbr -a -- nnn nnn -d -H -i
+    abbr -a -- gpush gerrit_push
 end
