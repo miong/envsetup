@@ -31,17 +31,16 @@ Install those LSP server using Mason:
 
 ## Command line tools
 ### apt based install
-``
+```
 sudo apt install
-micro
-cargo
+catimg
 fzf
 bat
 fd-find
 ripgrep
 fonts-powerline
 fish
-``
+```
 ### curl based install
 #### Bash side
 ```
@@ -51,7 +50,9 @@ curl -sS https://raw.githubusercontent.com/ajeetdsouza/zoxide/main/install.sh | 
 ```
 curl -sL https://raw.githubusercontent.com/jorgebucaran/fisher/main/functions/fisher.fish | source && fisher install jorgebucaran/fisher
 ```
-
+```
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+```
 
 ### cargo based install
 ```
@@ -88,18 +89,6 @@ fisher install mong8se/actually.fish
 fisher install nickeb96/puffer-fish
 fisher install patrickf1/fzf.fish
 fisher install veirt/web-search.fish
-```
-
-## Micro plugins
-```
-micro -plugin install detectindent
-micro -plugin install bookmark
-micro -plugin install fzf
-micro -plugin install manipulator
-micro -plugin install quoter
-micro -plugin install fish
-micro -plugin install jump
-micro -plugin install filemanager
 ```
 
 ## Manual installs
