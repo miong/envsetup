@@ -6,12 +6,11 @@ profiles:
       args:
         - '-l'
       env: {}
+      cwd: /home/SETUPTHEUSERNAME/workspace/tools/beesoarm/framework/python/testbench
     name: admin
     icon: fas fa-poo
     id: local:custom:admin:f6f406f0-ce0a-4e77-a3dd-51f3dd2bd941
 hotkeys:
-  toggle-window:
-    - Ctrl-Space
   copy-current-path: []
   ctrl-c:
     - Ctrl-C
@@ -172,30 +171,32 @@ hotkeys:
     - Ctrl-Shift-E
   command-selector:
     - Ctrl-Shift-P
+  toggle-window:
+    - Ctrl-Shift-Space
 terminal:
   searchOptions: {}
   colorScheme:
-    name: base2tone-evening-dark
-    foreground: '#a4a1b5'
-    background: '#2a2734'
-    cursor: '#b37537'
+    name: Lavandula
+    foreground: '#736e7d'
+    background: '#050014'
+    cursor: '#8c91fa'
     colors:
-      - '#2a2734'
-      - '#8a75f5'
-      - '#ffad5c'
-      - '#ffcc99'
-      - '#9a86fd'
-      - '#ffad5c'
-      - '#afa0fe'
-      - '#a4a1b5'
-      - '#6c6783'
-      - '#ffb870'
-      - '#363342'
-      - '#545167'
-      - '#787391'
-      - '#d9d2fe'
-      - '#ffa142'
-      - '#eeebff'
+      - '#230046'
+      - '#7d1625'
+      - '#337e6f'
+      - '#7f6f49'
+      - '#4f4a7f'
+      - '#5a3f7f'
+      - '#58777f'
+      - '#736e7d'
+      - '#372d46'
+      - '#e05167'
+      - '#52e0c4'
+      - '#e0c386'
+      - '#8e87e0'
+      - '#a776e0'
+      - '#9ad4e0'
+      - '#8c91fa'
   profile: local:usrbinfish
   customColorSchemes: []
   autoOpen: true

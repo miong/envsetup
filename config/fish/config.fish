@@ -4,6 +4,9 @@ if status is-interactive
     set -gx ATUIN_NOBIND "true"
     atuin init fish | source
 
+    #Alias
+    alias bat="batcat"
+
     #Abbreviations
     abbr -a -- cp xcp
     abbr -a -- cd z
@@ -16,9 +19,10 @@ if status is-interactive
     abbr -a -- htop btm
     abbr -a -- gg gitui
     abbr -a -- hexdump hexyl
+    abbr -a -- vim nvim
     abbr -a -- tcode micro
     abbr -a -- code liteXL
-    abbr -a -- editconf 'nano /home/miongiov/.config/fish/config.fish'
+    abbr -a -- editconf 'nano /home/SETUPTHEUSERNAME/.config/fish/config.fish'
     abbr -a -- ps procs
     abbr -a -- history _atuin_search
     abbr -a -- nnn nnn -d -H -i
