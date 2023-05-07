@@ -119,14 +119,11 @@ local plugins = {
     config = function ()
       require("noice").setup({
         presets = {
-          bottom_search = true,
-          command_palette = false,
+          bottom_search = false,
+          command_palette = true,
           long_message_to_split = true,
           inc_rename = false,
           lsp_doc_border = true,
-        },
-        cmdline = {
-          view = "cmdline"
         },
         lsp = {
           hover = { enabled = false },
@@ -153,8 +150,11 @@ local plugins = {
         modes = {':', '/', '?'},
       })
       wilder.set_option('renderer', wilder.popupmenu_renderer(
-        wilder.popupmenu_palette_theme({
+        wilder.popupmenu_border_theme({
           border = 'rounded',
+          min_width = "100%",
+          left = { ' ‣ ', wilder.popupmenu_devicons() },
+          right = { ' ', wilder.popupmenu_scrollbar() },
           highlighter = wilder.basic_highlighter(),
           highlights = { accent = wilder.make_hl("WilderAccent", "Pmenu", {{a=1}, {a=1}, {foreground = "#a80775"}})}
         })

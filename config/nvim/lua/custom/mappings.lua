@@ -2,14 +2,20 @@ local M = {}
 
 M.global = {
   n = {
-    ["<leader>aq"] = {"<cmd> qa <CR>", "quit all buffers"},
+    ["<leader>aq"] = {"<cmd> qa <CR>", "quit all buffers" },
   },
 }
 
 M.todo = {
   n = {
-    ["<leader>td"] = { "<cmd> TodoTelescope <CR>", "list TODO tags"},
+    ["<leader>td"] = { "<cmd> TodoTelescope <CR>", "list TODO tags" },
   }
+}
+
+M.Noice = {
+  n = {
+    ["<leader>ms"] = { "<cmd> NoiceTelescope <CR>", "List messages" },
+  },
 }
 
 M.searchreplace = {
