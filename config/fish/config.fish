@@ -3,6 +3,9 @@ if status is-interactive
     zoxide init fish | source
     set -gx ATUIN_NOBIND "true"
     atuin init fish | source
+    fzf_configure_bindings --history=
+    bind \cr _atuin_search
+    bind -M insert \cr _atuin_search
 
     #Alias
     alias bat="batcat"
