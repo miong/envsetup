@@ -1,11 +1,17 @@
 if status is-interactive
     # Commands to run in interactive sessions can go here
+    
+    # Init commands
     zoxide init fish | source
     set -gx ATUIN_NOBIND "true"
     atuin init fish | source
     fzf_configure_bindings --history=
+
+
+    # Bindings
     bind \cr _atuin_search
     bind -M insert \cr _atuin_search
+    bind \cn 'fuck; sleep 1; commandline -f repaint'  
 
     #Alias
     alias bat="batcat"
@@ -29,5 +35,6 @@ if status is-interactive
     abbr -a -- ps procs
     abbr -a -- history _atuin_search
     abbr -a -- nnn nnn -d -H -i
+    abbr -a -- fk fuck
     abbr -a -- gpush gerrit_push
 end

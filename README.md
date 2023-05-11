@@ -54,42 +54,47 @@ curl -sL https://raw.githubusercontent.com/jorgebucaran/fisher/main/functions/fi
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 ```
 
+### Pip based install
+```
+pip3 install thefuck
+```
+
 ### cargo based install
 ```
 cargo install atuin
-cargo install bottom
-cargo install cargo-update
-cargo install delta
-cargo install exa
-cargo install git-delta
-cargo install gitui
-cargo install hexyl
-cargo install lsd
-cargo install minus
-cargo install procs
-cargo install rm-improved
-cargo install tealdeer
-cargo install topgrade
-cargo install xcp
+bottom
+cargo-update
+delta
+exa
+git-delta
+gitui
+hexyl
+lsd
+minus
+procs
+rm-improved
+tealdeer
+topgrade
+xcp
 ```
 
 ## Fish plugins
 ```
 fisher install e-beach/fish-logic
-fisher install eth-p/fish-plugin-sudo
-fisher install franciscolourenco/done
-fisher install gazorby/fish-abbreviation-tips
-fisher install jethrokuan/z
-fisher install jorgebucaran/fisher
-fisher install jorgebucaran/replay.fish
-fisher install lilyball/nix-env.fish
-fisher install markcial/upto
-fisher install matchai/spacefish
-fisher install mong8se/actually.fish
-fisher install nickeb96/puffer-fish
-fisher install patrickf1/fzf.fish
-fisher install veirt/web-search.fish
+eth-p/fish-plugin-sudo
+franciscolourenco/done
+gazorby/fish-abbreviation-tips
+jethrokuan/z
+jorgebucaran/fisher
+jorgebucaran/replay.fish
+lilyball/nix-env.fish
+markcial/upto
+matchai/spacefish
+mong8se/actually.fish
+nickeb96/puffer-fish
+patrickf1/fzf.fish
+veirt/web-search.fish
 ```
 
-## Manual installs
+## Manual addon installs
 NNN - https://github.com/jarun/nnn
