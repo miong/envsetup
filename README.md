@@ -76,6 +76,7 @@ rm-improved
 tealdeer
 topgrade
 xcp
+mprocs
 ```
 
 ## Fish plugins
