@@ -178,27 +178,27 @@ hotkeys:
 terminal:
   searchOptions: {}
   colorScheme:
-    name: Lavandula
-    foreground: '#736e7d'
-    background: '#050014'
-    cursor: '#8c91fa'
+    name: Atom
+    foreground: '#c5c8c6'
+    background: '#161719'
+    cursor: '#d0d0d0'
     colors:
-      - '#230046'
-      - '#7d1625'
-      - '#337e6f'
-      - '#7f6f49'
-      - '#4f4a7f'
-      - '#5a3f7f'
-      - '#58777f'
-      - '#736e7d'
-      - '#372d46'
-      - '#e05167'
-      - '#52e0c4'
-      - '#e0c386'
-      - '#8e87e0'
-      - '#a776e0'
-      - '#9ad4e0'
-      - '#8c91fa'
+      - '#000000'
+      - '#fd5ff1'
+      - '#87c38a'
+      - '#ffd7b1'
+      - '#85befd'
+      - '#b9b6fc'
+      - '#85befd'
+      - '#e0e0e0'
+      - '#000000'
+      - '#fd5ff1'
+      - '#94fa36'
+      - '#f5ffa8'
+      - '#96cbfe'
+      - '#b9b6fc'
+      - '#85befd'
+      - '#e0e0e0'
   profile: local:usrbinfish
   customColorSchemes: []
   autoOpen: true
@@ -218,4 +218,5 @@ profileDefaults:
   ssh:
     disableDynamicTitle: true
 trzszPlugin: {}
-titleControl: {}
+titleControl:
+  replacePattern: '\i - \cwd | [\pid] \cmd '

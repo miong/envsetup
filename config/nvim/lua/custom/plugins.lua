@@ -161,6 +161,19 @@ local plugins = {
       ))
     end
   },
+  -- vim-just
+  {
+    "NoahTheDuke/vim-just",
+    lazy = false
+  },
+  -- tree-sitter-just
+  {
+    "IndianBoy42/tree-sitter-just",
+    lazy = false,
+    init = function ()
+      require("tree-sitter-just").setup({})
+    end
+  }
 
 }
 

@@ -1,3 +1,9 @@
 {
-	"maximized": true
+	"maximized": true,
+	"windowBoundaries": {
+		"x": 1831,
+		"y": 208,
+		"width": 1717,
+		"height": 965
+	}
 }
