@@ -65,7 +65,7 @@ cargo install atuin
 bottom
 cargo-update
 delta
-exa
+eza
 git-delta
 gitui
 hexyl

@@ -19,9 +19,9 @@ if status is-interactive
     #Abbreviations
     abbr -a -- cp xcp
     abbr -a -- cd z
-    abbr -a -- tree 'exa --icons --color=always --tree'
-    abbr -a -- ls 'exa --icons --color=always'
-    abbr -a -- ll 'exa --icons --color=always -l'
+    abbr -a -- tree 'eza --icons --color=always --tree'
+    abbr -a -- ls 'eza --icons --color=always --group-directories-first'
+    abbr -a -- ll 'eza --icons --color=always -l --group-directories-first --git -h -a'
     abbr -a -- cat batcat
     abbr -a -- find fdfind
     abbr -a -- google 'web-search google'
