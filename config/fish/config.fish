@@ -25,6 +25,7 @@ if status is-interactive
     abbr -a -- cat batcat
     abbr -a -- find fdfind
     abbr -a -- google 'web-search google'
+    abbr -a -- sofw 'web-search stackoverflow'
     abbr -a -- htop btm
     abbr -a -- gg gitui
     abbr -a -- hexdump hexyl
@@ -37,4 +38,12 @@ if status is-interactive
     abbr -a -- nnn nnn -d -H -i
     abbr -a -- fk fuck
     abbr -a -- gpush gerrit_push
+    abbr -a -- sudo please
+    abbr -a -- snippet the-way
+    abbr -a -- weather wthrr -f w,d -l fr
+    abbr -a -- du ncdu
+    abbr -a -- df duf
+    abbr -a -- rm rip
+    abbr -a -- touch ad
+    abbr -a -- locks rusty-rain -C green -H blue -c jap -s 
 end

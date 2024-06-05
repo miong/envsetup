@@ -1,3 +1,7 @@
+function gerrit_get_remote_name
+  git branch --all | grep -E -e remotes/gerrit -e remotes/origin | sed -E -e "s?.*remotes/([^ ]*)/.*?\1?g" -e "s?(.*) -> .*?\1?g" | tail -n 1
+end
+
 function gerrit_push
   echo (set_color brwhite; echo "Gerrit pushing"; set_color normal)
   set branchName $argv[1]
@@ -6,5 +10,5 @@ function gerrit_push
     set branchName "master"
   end
   echo (set_color brwhite; echo "Sending HEAD to review on branch $branchName"; set_color normal)
-  git push (git branch --all | grep remotes/m/master | sed -E -e "s?.* -> (.*)/master?\1?g") HEAD:refs/for/$branchName
+  git push (gerrit_get_remote_name) HEAD:refs/for/$branchName
 end

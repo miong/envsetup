@@ -1,4 +1,4 @@
-version: 3
+version: 6
 profiles:
   - type: local
     options:
@@ -10,6 +10,17 @@ profiles:
     name: admin
     icon: fas fa-poo
     id: local:custom:admin:f6f406f0-ce0a-4e77-a3dd-51f3dd2bd941
+  - type: ssh
+    name: VPS FCE Inno
+    icon: fas fa-desktop
+    options:
+      host: fceinno.com
+      user: ubuntu
+      algorithms: {}
+      input: {}
+      privateKeys: []
+    weight: -1
+    id: ssh:custom:VPS-FCE-Inno:bf519399-2701-42ec-9062-277766c5050d
 hotkeys:
   copy-current-path: []
   ctrl-c:
@@ -175,6 +186,7 @@ hotkeys:
     - Ctrl-Shift-P
   toggle-window:
     - Ctrl-Shift-Space
+  disconnect-tab: []
 terminal:
   searchOptions: {}
   colorScheme:
@@ -202,7 +214,12 @@ terminal:
   profile: local:usrbinfish
   customColorSchemes: []
   autoOpen: true
-ssh: {}
+ssh:
+  knownHosts:
+    - host: fceinno.com
+      port: 22
+      type: ecdsa-sha2-nistp256
+      digest: pxXiEdSgw8Ky7QcGutf3xW5EBSKWk/ADVLCi1zmBr5s=
 configSync:
   parts: {}
 clickableLinks: {}
@@ -220,3 +237,5 @@ profileDefaults:
 trzszPlugin: {}
 titleControl:
   replacePattern: '\i - \cwd | [\pid] \cmd '
+groups: []
+profileBlacklist: []
