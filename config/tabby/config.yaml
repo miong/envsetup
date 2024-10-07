@@ -1,4 +1,4 @@
-version: 6
+version: 7
 profiles:
   - type: local
     options:
@@ -239,3 +239,34 @@ titleControl:
   replacePattern: '\i - \cwd | [\pid] \cmd '
 groups: []
 profileBlacklist: []
+searchInBrowserPlugin: {}
+saveOutput: {}
+highlightPlugin:
+  highlightProfiles:
+    - id: 60606be0-c0ff-42bc-bf77-de8a2435447f
+      name: Default
+      keywords:
+        - text: ERROR
+          enabled: true
+          background: true
+          backgroundColor: '1'
+        - text: WARN
+          enabled: true
+          background: true
+          backgroundColor: '3'
+        - text: INFO
+          enabled: true
+          background: true
+          backgroundColor: '6'
+        - text: 错误
+          enabled: true
+          background: true
+          backgroundColor: '1'
+        - text: 警告
+          enabled: true
+          background: true
+          backgroundColor: '3'
+        - text: 信息
+          enabled: true
+          background: true
+          backgroundColor: '6'

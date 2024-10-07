@@ -93,6 +93,7 @@ ouch \
 oxker \
 procs \
 rm-improved \
+serie \
 skim \
 spacer \
 tealdeer \
