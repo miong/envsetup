@@ -59,6 +59,7 @@ curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 ### Pip based install
 ```
 pip3 install thefuck
+pip3 install --user advance-touch
 ```
 
 ### cargo based install
